@@ -276,7 +276,7 @@ body {
     .nav-links {
         display: none; /* Oculta os links da navbar */
         flex-direction: column; /* Coloca os links em coluna */
-        width: 100%; /* Ocupa toda a largura */
+        width: 80%; /* Ocupa toda a largura */
         background-color: #ffffff; /* Cor de fundo */
     }
     
