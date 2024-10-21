@@ -212,7 +212,7 @@ body {
 
     .nav-links {
         flex-direction: column; /* Coloca os links em coluna */
-        width: 80%; /* Faz a lista ocupar toda a largura */
+        width: 100%; /* Faz a lista ocupar toda a largura */
         padding: 15px /* Adiciona espaço em torno dos links */
         
     }
