@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Belleza", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    background-color: #ffffff;
+    padding: 10px 40px;
+    color: black;
+    border-bottom: 4px solid #000000
+}
+.logo-img{
+    height: 80px;
+    width: 10rem;
+}
+.logo {
+    color: black;
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+    justify-content: space-around; 
+    flex-grow: 1; 
+}
+
+.nav-links li {
+    margin: 0; 
+}
+
+.nav-links a {
+    font-size: 28px;
+    font-family: "Belleza", sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px; 
+}
+
+.nav-links a:hover {
+   color: #F6C43E;
+}
+
+.btn {
+    font-size: 24px;
+    background-color: #F6C43E ;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(158, 124, 11);
+    color: #ffffff;
+}
+
+.rastro{
+    border-bottom: 5px solid #F6C43E;
+    border-radius: 10px
+}
+/* ______________________________________________________FIM NAVBAR_________________________________________________________________________ */
+
+
+
+/* ______________________________________________________COMEÇO MAIN_________________________________________________________________________ */
+
+.container{
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #F6C43E;
+    padding: 15px;
+    border-bottom: 4px solid #000000
+}
+
+.img-cont{
+    height: 300px;
+    height: 300px;
+}
+
+.coluna2 h1{
+    font-size: 40px;
+}
+
+.coluna2 {
+    flex: 1; 
+    margin: 0 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.coluna2 .btn {
+    margin: 0; /
+    display: inline-block; 
+    background-color: #ffffff;
+}
+
+
+.coluna2 .btn:hover {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+/* Começo historia  */
+
+.historia {
+    background-image: url(../img/main/teste.png);
+    display: flex;
+    flex-direction: column; /* Organiza as seções em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto dentro de cada seção */
+    padding: 20px; /* Adiciona um pouco de espaço ao redor */
+    border-bottom: 2px solid black;
+}
+
+.titulo {
+    max-width: 800px; /* Limita a largura máxima para melhor legibilidade */
+    margin: 20px 0; /* Espaço entre as seções */
+}
+
+.titulo h1{
+    font-size: 40px;
+}
+
+.titulo p{
+    font-size: 28px;}
+.img-hist{
+        height: 400px;
+        width: 600px;
+}
+
+/* container2 */
+
+.coluna3 {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.coluna3 h3 {
+    font-size: 22px;
+    margin-top: 0; 
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.coluna3 p{
+    font-size: 18px;
+}
+
+.coluna2 h3{
+    font-size: 20px;
+}
+
+.container2{
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #fbe8b0;
+    padding: 15px;
+    border-bottom: 4px solid #000000
+}
+/* ______________________________________________________FIM MAIN_________________________________________________________________________ */
+
+
+
+
+/*_____________________________________________ _______começo Rodape_______________________________________________________________________ */
+.footer {
+    display: flex; 
+    justify-content: space-between; 
+    background-color: #333; 
+    color: white; 
+    padding: 20px; 
+}
+
+.coluna {
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.coluna h3 {
+    margin-top: 0; 
+}
+
+.insta{
+    color: #ffffff;
+    text-decoration: none;
+}
+/* _________________________________________________Fim Rodape______________________________________________________________________ */
+
+
+
+
+
+
+
+
+
+/* Media Queries para responsividade */
+/* navbar-hamburg */
+.menu-toggle {
+    display: none; /* Oculta o ícone por padrão */
+    flex-direction:column-reverse;
+    cursor: pointer;
+}
+
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: #F6C43E;
+    margin: 4px 0;
+}
+.navbar {
+    height: 90px; /* Ajusta a altura da navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Ajusta o espaçamento interno */
+    background-color: #ffffff; 
+}
+
+/* fim navbar-hamburg */ 
+
+
+/* Estilos responsivos 
+telas menores */
+@media (max-width: 1040px) {
+    .nav-links {
+        display: none; /* Oculta os links da navbar por padrão */
+        flex-direction: column; /* Coloca os links em coluna */
+        width: 100%; /* Ocupa a largura total do viewport */
+        background-color: #ffffff; /* Cor de fundo */
+        position: absolute; /* Torna o menu fixo */
+        top: 83px; /* Posiciona logo abaixo da navbar */
+        left: 0;
+    }
+    
+    .nav-links.active {
+        display: flex; /* Mostra os links quando a classe active está presente */
+        flex-direction: column; /* Empilha os links verticalmente */
+    }
+
+    .menu-toggle {
+        display: flex; /* Mostra o ícone de hambúrguer em telas menores */
+    }
+
+    .navbar {
+        flex-direction: row; /* Mantém os elementos da navbar na horizontal */
+        height: 80px; /* Mantém a navbar fina mesmo em telas menores */
+    }
+    
+    .container, .container2 {
+        flex-direction: column; /* Organiza as colunas em coluna */
+        padding: 10px; /* Ajusta o padding */
+    }
+    .coluna {
+        flex: 1; 
+        margin: 0 10px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+/* Estilo dos links de navegação */
+.nav-links a {
+    padding: 15px 20px; /* Ajusta o padding dos links */
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    width: 100%;
+    display: block; /* Faz com que os links ocupem toda a largura */
+}
+
+.rastro {
+    border-bottom: 5px solid #F6C43E;
+    border-radius: 10px;
+    width: 30%; /* Ajuste conforme necessário */
+    margin-left: 38%; /* Centraliza o elemento */
+    display: block;
+}
+
+.img-hist{
+    height: 500px;
+    width: 500px;
+}
+
+}
+@media (max-width: 768px) {
+    .btn {
+        font-size: 20px; /* Diminui o tamanho do botão */
+        padding: 8px 12px; /* Ajusta o padding do botão */
+    }
+
+    .footer {
+        flex-direction: column; /* Empilha as colunas do rodapé */
+        align-items: center; /* Centraliza o conteúdo do rodapé */
+    }
+
+    .coluna {
+        margin: 10px 0; /* Ajusta a margem das colunas do rodapé */
+    }
+    .img-hist{
+        height: 270px;
+        width: 290px;
+    }
+    .img-cont{
+        height: 250px;
+        height: 250px;
+    }
+}
