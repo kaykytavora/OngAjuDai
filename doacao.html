@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/doe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./img/navbar/imagem_2024-10-23_205951473-removebg-preview.png" type="image/x-icon">
+    <title>Projetos</title>
+</head>
+
+<body>
+    <!-- Começo NavBar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./img/navbar/logo.png" alt="logo" class="logo-img"></a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Quem Somos</a></li>
+            <li><a href="#">Como Ajudar</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="doacao.html"><button class="btn">DOE AGORA</button></a></li>
+        </ul>
+    </nav>
+    <!-- Fim NavBar -->
+
+    <!-- Começo MAIN -->
+    <main>
+        <!-- Começo Container2 -->
+        <section class="container2">
+            <section class="coluna">
+                <section class="container">
+                    <section class="fund">
+                        <h4>Chaves Pix</h4>
+                        <img class="qrcode" src="./img/main/qrteste.png" alt="QR Code" style="display: block; margin: 0 auto;">
+                    </section>
+                </section>
+            </section>
+
+            <section class="coluna">
+                <section class="container">
+                    <section class="fund">
+                        <h4>Chaves Pix</h4>
+                        <h5>E-mail:</h5>
+                        <p>projetoajudai1@gmail.com</p>
+                        <div class="line"></div> <!-- Linha de divisão -->
+                        <h5>Chave-Aleatoria</h5>
+                        <h6>xxxxxxxxxxxxxxxxxxxx</h6>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <!-- Fim MAIN -->
+
+    <!-- Começo Rodape -->
+    <footer class="footer">
+        <section class="coluna3">
+            <h3>Mais<br>Informações</h3>
+            <p>projetoajudai1@gmail.com</p>
+        </section>
+        <section class="coluna3">
+            <h3>Redes Sociais</h3>
+            <p><i class="fab fa-instagram"><a href="https://www.instagram.com/projetoajudai1?igsh=MWp5cWJkNGhkcTE2Yw=="
+                        target="_blank" class="insta"> Projeto AjuDai </a></i></p>
+        </section>
+        <section class="coluna3">
+            <h3>Mateus 25:35-36</h3>
+            <p>"Pois tive fome, e vocês me deram de comer; tive sede, e vocês me deram de beber; fui estrangeiro, e
+                vocês me acolheram; estava nu, e vocês me vestiram; adoeci, e vocês cuidaram de mim; estive na prisão, e
+                vocês me visitaram."</p>
+        </section>
+    </footer>
+    <!-- Fim Rodape -->
+
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.getElementById('nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active'); // Adiciona ou remove a classe active
+        });
+    </script>
+</body>
+
+</html>

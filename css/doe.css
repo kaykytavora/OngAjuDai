@@ -1,11 +1,14 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Estilos do body */
 body {
     margin: 0;
     font-family: "Belleza", sans-serif;
 }
 
+/* Estilos da Navbar */
 .navbar {
     display: flex;
     align-items: center; 
@@ -13,12 +16,14 @@ body {
     background-color: #ffffff;
     padding: 10px 40px;
     color: black;
-    border-bottom: 4px solid #000000
+    border-bottom: 4px solid #000000;
 }
-.logo-img{
+
+.logo-img {
     height: 80px;
     width: 10rem;
 }
+
 .logo {
     color: black;
     font-size: 24px;
@@ -46,12 +51,12 @@ body {
 }
 
 .nav-links a:hover {
-   color: #F6C43E;
+    color: #F6C43E;
 }
 
 .btn {
     font-size: 24px;
-    background-color: #F6C43E ;
+    background-color: #F6C43E;
     color: rgb(0, 0, 0);
     border: none;
     padding: 10px 15px;
@@ -64,59 +69,97 @@ body {
     color: #ffffff;
 }
 
-.rastro{
+.rastro {
     border-bottom: 5px solid #F6C43E;
-    border-radius: 10px
+    border-radius: 10px;
 }
-
 
 /* ______________________________________________________FIM NAVBAR_________________________________________________________________________ */
 
-
-
 /* ______________________________________________________COMEÇO MAIN_________________________________________________________________________ */
-
-.container{
-    display: flex; 
-    justify-content: space-between; 
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0), #f6c53e50);
-    padding: 15px;
-    border-bottom: 4px solid #000000
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Se precisar centralizar verticalmente em toda a altura da tela */
 }
 
+.container2 {
+    display: flex;
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    align-items: center; /* Centraliza os itens no eixo vertical */
+    gap: 20px; /* Espaçamento entre as duas divs */
+    flex-wrap: wrap; /* Para garantir que em telas menores as divs fiquem empilhadas */
+    padding: 20px;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .coluna2 {
     flex: 1; 
     margin: 0 10px; 
     display: flex; 
-    justify-content:center;
+    justify-content: center;
     align-items: center; 
 }
 
-.coluna2 h2{
+.coluna2 h2 {
     font-size: 20px;
     font-family: "Raleway", sans-serif;
 }
 
-.coluna2 h3{
+.coluna2 h3 {
     font-size: 30px;
-    
 }
 
-.container2{
-    display: flex; 
-    justify-content: space-between; 
-    flex-direction:row-reverse;
-    background: linear-gradient(45deg, white, #F6C43E);
-    padding: 15px;
-    border-bottom: 4px solid #000000
+.fund {
+    width: 400px;
+    height: 400px;
+    background-color: #F6C43E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center; /* Centraliza o texto dentro da seção */
 }
 
+.fund h4 {
+    font-size: 22px;
+    position: absolute;
+    top: -80px; /* Ajuste conforme necessário */
+    width: 110%; /* Garante que o fundo ocupe toda a largura */
+    background-color: white;
+    padding: 0; /* Espaçamento vertical dentro do h4 */
+    text-align: center; /* Centraliza o texto */
+    box-sizing: border-box; /* Garante que o padding não extrapole a largura */
+    border-radius: 5px; /* Bordas arredondadas opcionais */
+}
+
+.fund h5, .fund h6, .fund p {
+    font-size: 27px;
+    margin: 10px 0; /* Espaçamento em cima e embaixo */
+}
+
+/* Estilo da linha */
+.line {
+    width: 50%; /* Largura da linha */
+    height: 2px; /* Altura da linha */
+    background-color: black; /* Cor da linha */
+    margin: 10px auto; /* Centraliza a linha */
+}
+
+.qrcode {
+    width: 300px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin: 20px 0; /* Espaçamento em cima e embaixo */
+}
 
 /* ______________________________________________________FIM MAIN_________________________________________________________________________ */
-
-
-
 
 /*_____________________________________________ _______começo Rodape_______________________________________________________________________ */
 .footer {
@@ -127,37 +170,27 @@ body {
     padding: 20px; 
 }
 
-.coluna {
-    flex: 1; 
-    margin: 0 10px; 
-}
 .coluna3 {
     flex: 1; 
     margin: 0 10px; 
 }
+
 .coluna h3 {
     margin-top: 0; 
 }
 
-.insta{
+.insta {
     color: #ffffff;
     text-decoration: none;
 }
+
 /* _________________________________________________Fim Rodape______________________________________________________________________ */
-
-
-
-
-
-
-
-
 
 /* Media Queries para responsividade */
 /* navbar-hamburg */
 .menu-toggle {
     display: none; /* Oculta o ícone por padrão */
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
     cursor: pointer;
 }
 
@@ -167,6 +200,7 @@ body {
     background-color: #F6C43E;
     margin: 4px 0;
 }
+
 .navbar {
     height: 90px; /* Ajusta a altura da navbar */
     display: flex;
@@ -176,11 +210,9 @@ body {
     background-color: #ffffff; 
 }
 
-/* fim navbar-hamburg */ 
+/* Fim navbar-hamburg */ 
 
-
-/* Estilos responsivos 
-telas menores */
+/* Estilos responsivos para telas menores */
 @media (max-width: 1040px) {
     .nav-links {
         display: none; /* Oculta os links da navbar por padrão */
@@ -190,6 +222,7 @@ telas menores */
         position: absolute; /* Torna o menu fixo */
         top: 83px; /* Posiciona logo abaixo da navbar */
         left: 0;
+        z-index: 999;
     }
     
     .nav-links.active {
@@ -211,25 +244,50 @@ telas menores */
         padding: 8px; /* Ajusta o padding */
     }
     
-/* Estilo dos links de navegação */
-.nav-links a {
-    padding: 15px 20px; /* Ajusta o padding dos links */
-    text-decoration: none;
-    color: #333;
-    text-align: center;
-    width: 100%;
-    display: block; /* Faz com que os links ocupem toda a largura */
+    /* Estilo dos links de navegação */
+    .nav-links a {
+        padding: 15px 20px; /* Ajusta o padding dos links */
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        width: 100%;
+        display: block; /* Faz com que os links ocupem toda a largura */
+    }
+
+    .rastro {
+        border-bottom: 5px solid #F6C43E;
+        border-radius: 10px;
+        width: 30%; /* Ajuste conforme necessário */
+        margin-left: 38%; /* Centraliza o elemento */
+        display: block;
+    }
+
+    .fund {
+        width: 300px;
+        height: 300px;
+        background-color: #F6C43E;
+        position: relative; /* Necessário para posicionar o h4 */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Alinha o h4 no topo */
+        padding-top: 20px; /* Espaçamento entre o topo da div e o texto */
+    }
+    
+    .qrcode {
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .fund h5, .fund h6, .fund p {
+        font-size: 20px; /* Tamanho da fonte menor em telas pequenas */
+    }
+
+    .fund {
+        padding: 10px; /* Ajusta o padding se necessário */
+    }
 }
 
-.rastro {
-    border-bottom: 5px solid #F6C43E;
-    border-radius: 10px;
-    width: 30%; /* Ajuste conforme necessário */
-    margin-left: 38%; /* Centraliza o elemento */
-    display: block;
-}
-
-}
 @media (max-width: 768px) {
     .btn {
         font-size: 20px; /* Diminui o tamanho do botão */
@@ -240,7 +298,4 @@ telas menores */
         flex-direction: column; /* Empilha as colunas do rodapé */
         align-items: center; /* Centraliza o conteúdo do rodapé */
     }
-
-   
-   
 }

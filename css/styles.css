@@ -115,6 +115,7 @@ body {
 
 .historia {
     background-image: url(../img/main/teste.png);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column; /* Organiza as seções em coluna */
     align-items: center; /* Centraliza horizontalmente */
@@ -164,7 +165,7 @@ body {
 .container2{
     display: flex; 
     justify-content: space-between; 
-    background-color: #fbe8b0;
+    background-color: transparent;
     padding: 15px;
     border-bottom: 4px solid #000000
 }
