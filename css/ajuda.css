@@ -5,7 +5,7 @@
 /* Estilos do body */
 body {
     margin: 0;
-    font-family: "Belleza", sans-serif;
+   font-family: "Raleway", serif;
 }
 
 /* Estilos da Navbar */
@@ -69,42 +69,34 @@ body {
     color: #ffffff;
 }
 
-.rastro {
-    border-bottom: 5px solid #F6C43E;
-    border-radius: 10px;
-}
 
 /* ______________________________________________________FIM NAVBAR______________________________________________________________ */
 
 /* ______________________________________________________COMEÇO MAIN_____________________________________________________________ */
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+
 
 .container2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
     flex-wrap: wrap;
-    padding: 20px;
+}
+.container2 h1{
+  letter-spacing: 2px;
 }
 
 .coluna {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 5px; /* Mantém as frases próximas */
+    margin-bottom: 5px; 
 }
 
 .coluna p {
     margin: 0;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 .coluna:last-of-type {
@@ -113,7 +105,7 @@ body {
 
 .coluna2 {
     flex: 1;
-    margin: 0 10px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,10 +135,16 @@ main {
     border-radius: 15px;
     border: 2px solid #000000;
     text-align: center;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .container3 h2 {
-    margin-top: 0;
+    font-size: 35px;
+    font-weight: 800;
+}
+.container3 p {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .container3 label {
@@ -154,15 +152,16 @@ main {
     text-align: left;
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .container3 input,
 .container3 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border-radius: 10px;
-    border: none;
 }
 
 .container3 button {
@@ -175,6 +174,11 @@ main {
     font-weight: bold;
 }
 
+.container3 button:hover{
+    background-color: rgb(158, 124, 11);
+    color: #ffffff;
+}
+
 .container3 button i {
     margin-left: 5px;
 }
@@ -184,27 +188,31 @@ main {
     padding: 25px 0;
     display: flex;
     justify-content: center;
-    gap: 200px;
-    margin-top: 70px;
+    gap: 5rem;
+    margin-top: 1.5rem;
 }
 
 .content .box {
-    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
     background-color: white;
+    border: 2px solid black;
     padding: 20px;
     margin: 10px;
-    border-radius: 10px;
-    vertical-align: top;
+    border-radius: 25px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .content .box h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 22px;
+   
 }
 
 .content .box p {
-    font-size: 14px;
-    margin: 0;
+    font-size: 18px;
 }
 
 /* ______________________________________________________FIM MAIN_______________________________________________________________ */
@@ -288,17 +296,17 @@ main {
         height: 80px;
     }
 
-    .container,
-    .container2 {
+    .container3,
+    .container {
         flex-direction: column;
         padding: 8px;
+        margin-top: 2rem;
     }
 
     .nav-links a {
         padding: 15px 20px;
         color: #333;
         text-align: center;
-        width: 100%;
         display: block;
     }
 }
@@ -310,6 +318,7 @@ main {
     }
 
     .footer {
+        margin-top: 2rem;
         flex-direction: column;
         align-items: center;
     }

@@ -79,25 +79,21 @@ body {
 /* ______________________________________________________COMEÇO MAIN_________________________________________________________________________ */
 .container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    height: 100vh; /* Se precisar centralizar verticalmente em toda a altura da tela */
+    justify-content: center; 
+    align-items: center; 
+    margin: 2rem;
 }
 
 .container2 {
     display: flex;
-    justify-content: center; /* Centraliza os itens no eixo horizontal */
-    align-items: center; /* Centraliza os itens no eixo vertical */
-    gap: 20px; /* Espaçamento entre as duas divs */
-    flex-wrap: wrap; /* Para garantir que em telas menores as divs fiquem empilhadas */
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
     padding: 20px;
 }
 
-.coluna {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .coluna2 {
     flex: 1; 
@@ -117,46 +113,48 @@ body {
 }
 
 .fund {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     background-color: #F6C43E;
+    border: 3px solid black;
+    border-radius: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    text-align: center; /* Centraliza o texto dentro da seção */
+    text-align: center; 
 }
 
 .fund h4 {
-    font-size: 22px;
+    font-size: 40px;
     position: absolute;
-    top: -80px; /* Ajuste conforme necessário */
-    width: 110%; /* Garante que o fundo ocupe toda a largura */
-    background-color: white;
-    padding: 0; /* Espaçamento vertical dentro do h4 */
-    text-align: center; /* Centraliza o texto */
-    box-sizing: border-box; /* Garante que o padding não extrapole a largura */
-    border-radius: 5px; /* Bordas arredondadas opcionais */
+    top: -2.5rem; 
+    width: 110%; 
+    padding: 0; 
+    text-align: center; 
+    box-sizing: border-box; 
+    border-radius: 5px; 
 }
 
 .fund h5, .fund h6, .fund p {
     font-size: 27px;
-    margin: 10px 0; /* Espaçamento em cima e embaixo */
+    margin: 10px 0; 
 }
 
 /* Estilo da linha */
 .line {
-    width: 50%; /* Largura da linha */
-    height: 2px; /* Altura da linha */
-    background-color: black; /* Cor da linha */
-    margin: 10px auto; /* Centraliza a linha */
+    width: 50%; 
+    height: 2px; 
+    background-color: black; 
+    margin: 10px auto; 
 }
 
 .qrcode {
-    width: 300px; /* Ajuste a largura conforme necessário */
-    height: auto; /* Mantém a proporção */
-    margin: 20px 0; /* Espaçamento em cima e embaixo */
+    width: 300px; 
+    height: auto; 
+    margin: 20px 0; 
+    border-radius: 2rem;
 }
 
 /* ______________________________________________________FIM MAIN_________________________________________________________________________ */
@@ -168,7 +166,7 @@ body {
     background-color: #333; 
     color: white; 
     padding: 20px; 
-}
+    margin-top: 2rem;}
 
 .coluna3 {
     flex: 1; 
@@ -189,7 +187,7 @@ body {
 /* Media Queries para responsividade */
 /* navbar-hamburg */
 .menu-toggle {
-    display: none; /* Oculta o ícone por padrão */
+    display: none; 
     flex-direction: column-reverse;
     cursor: pointer;
 }
@@ -215,50 +213,52 @@ body {
 /* Estilos responsivos para telas menores */
 @media (max-width: 1040px) {
     .nav-links {
-        display: none; /* Oculta os links da navbar por padrão */
-        flex-direction: column; /* Coloca os links em coluna */
-        width: 100%; /* Ocupa a largura total do viewport */
-        background-color: #ffffff; /* Cor de fundo */
-        position: absolute; /* Torna o menu fixo */
-        top: 83px; /* Posiciona logo abaixo da navbar */
+        display: none; 
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #ffffff;
+        position: absolute; 
+        top: 83px; 
         left: 0;
         z-index: 999;
     }
     
     .nav-links.active {
-        display: flex; /* Mostra os links quando a classe active está presente */
-        flex-direction: column; /* Empilha os links verticalmente */
+        display: flex; 
+        flex-direction: column; 
     }
 
     .menu-toggle {
-        display: flex; /* Mostra o ícone de hambúrguer em telas menores */
+        display: flex; 
     }
 
     .navbar {
-        flex-direction: row; /* Mantém os elementos da navbar na horizontal */
-        height: 80px; /* Mantém a navbar fina mesmo em telas menores */
+        flex-direction: row; 
+        height: 80px; 
     }
     
     .container, .container2 {
-        flex-direction: column; /* Organiza as colunas em coluna */
-        padding: 8px; /* Ajusta o padding */
+        flex-direction: column; 
+        padding: 8px;
+        margin: 0.5rem ;
     }
+
+   
     
     /* Estilo dos links de navegação */
     .nav-links a {
-        padding: 15px 20px; /* Ajusta o padding dos links */
+        padding: 15px 20px; 
         text-decoration: none;
         color: #333;
         text-align: center;
-        width: 100%;
-        display: block; /* Faz com que os links ocupem toda a largura */
+        display: block; 
     }
 
     .rastro {
         border-bottom: 5px solid #F6C43E;
         border-radius: 10px;
-        width: 30%; /* Ajuste conforme necessário */
-        margin-left: 38%; /* Centraliza o elemento */
+        width: 30%; 
+        margin-left: 38%;
         display: block;
     }
 
@@ -266,11 +266,21 @@ body {
         width: 300px;
         height: 300px;
         background-color: #F6C43E;
-        position: relative; /* Necessário para posicionar o h4 */
+        position: relative; 
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Alinha o h4 no topo */
-        padding-top: 20px; /* Espaçamento entre o topo da div e o texto */
+        align-items: center; 
+        padding-top: 20px; 
+    }
+    .fund h4 {
+        font-size: 30px;
+        position: absolute;
+        top: -1.5rem; 
+        width: 90%; 
+        padding: 0; 
+        text-align: center; 
+        box-sizing: border-box; 
+        border-radius: 5px; 
     }
     
     .qrcode {
@@ -280,22 +290,22 @@ body {
     }
 
     .fund h5, .fund h6, .fund p {
-        font-size: 20px; /* Tamanho da fonte menor em telas pequenas */
+        font-size: 20px; 
     }
 
     .fund {
-        padding: 10px; /* Ajusta o padding se necessário */
+        padding: 10px; 
     }
 }
 
 @media (max-width: 768px) {
     .btn {
-        font-size: 20px; /* Diminui o tamanho do botão */
-        padding: 8px 12px; /* Ajusta o padding do botão */
+        font-size: 20px; 
+        padding: 8px 12px; 
     }
 
     .footer {
-        flex-direction: column; /* Empilha as colunas do rodapé */
-        align-items: center; /* Centraliza o conteúdo do rodapé */
+        flex-direction: column; 
+        align-items: center; 
     }
 }

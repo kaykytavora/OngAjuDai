@@ -33,6 +33,8 @@ body {
     flex-grow: 1; 
 }
 
+
+
 .nav-links li {
     margin: 0; 
 }
@@ -47,6 +49,7 @@ body {
 
 .nav-links a:hover {
    color: #F6C43E;
+   transition: all 0.4s;
 }
 
 .btn {
@@ -107,7 +110,7 @@ body {
     display: flex; 
     justify-content: space-between; 
     flex-direction:row-reverse;
-    background: linear-gradient(45deg, white, #F6C43E);
+    background: linear-gradient(45deg, #F6C43E,white,#F6C43E);
     padding: 15px;
     border-bottom: 4px solid #000000
 }
@@ -217,7 +220,6 @@ telas menores */
     text-decoration: none;
     color: #333;
     text-align: center;
-    width: 100%;
     display: block; /* Faz com que os links ocupem toda a largura */
 }
 

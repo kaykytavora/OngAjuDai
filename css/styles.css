@@ -276,7 +276,6 @@ telas menores */
     text-decoration: none;
     color: #333;
     text-align: center;
-    width: 100%;
     display: block; /* Faz com que os links ocupem toda a largura */
 }
 
