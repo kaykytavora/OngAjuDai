@@ -328,14 +328,14 @@ main {
         align-items: center;
         background-color: #F6C43E;
         padding: 10px 0;
-        gap: 10px; /* Ajuste para reduzir o espaço entre os boxes */
+        gap: 10px; 
     }
 
     .content .box {
         width: 150px;
         background-color: white;
         padding: 20px;
-        margin: 5px; /* Reduz a margem para melhorar a compactação */
+        margin: 5px; 
         border-radius: 10px;
         vertical-align: top;
     }

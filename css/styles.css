@@ -100,7 +100,7 @@ body {
 
 
 .coluna2 .btn {
-    margin: 0; /
+    margin: 0; 
     display: inline-block; 
     background-color: #ffffff;
 }
@@ -117,16 +117,16 @@ body {
     background-image: url(../img/main/teste.png);
     background-repeat: no-repeat;
     display: flex;
-    flex-direction: column; /* Organiza as seções em coluna */
-    align-items: center; /* Centraliza horizontalmente */
-    text-align: center; /* Centraliza o texto dentro de cada seção */
-    padding: 20px; /* Adiciona um pouco de espaço ao redor */
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
     border-bottom: 2px solid black;
 }
 
 .titulo {
-    max-width: 800px; /* Limita a largura máxima para melhor legibilidade */
-    margin: 20px 0; /* Espaço entre as seções */
+    max-width: 800px; 
+    margin: 20px 0; 
 }
 
 .titulo h1{
@@ -209,7 +209,7 @@ body {
 /* Media Queries para responsividade */
 /* navbar-hamburg */
 .menu-toggle {
-    display: none; /* Oculta o ícone por padrão */
+    display: none; 
     flex-direction:column-reverse;
     cursor: pointer;
 }
@@ -221,11 +221,11 @@ body {
     margin: 4px 0;
 }
 .navbar {
-    height: 90px; /* Ajusta a altura da navbar */
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px; /* Ajusta o espaçamento interno */
+    padding: 0 20px; 
     background-color: #ffffff; 
 }
 
@@ -236,32 +236,31 @@ body {
 telas menores */
 @media (max-width: 1040px) {
     .nav-links {
-        display: none; /* Oculta os links da navbar por padrão */
-        flex-direction: column; /* Coloca os links em coluna */
-        width: 100%; /* Ocupa a largura total do viewport */
-        background-color: #ffffff; /* Cor de fundo */
-        position: absolute; /* Torna o menu fixo */
-        top: 83px; /* Posiciona logo abaixo da navbar */
+        display: none;
+        flex-direction: column; 
+        width: 100%; 
+        background-color: #ffffff; 
+        top: 83px; 
         left: 0;
     }
     
     .nav-links.active {
-        display: flex; /* Mostra os links quando a classe active está presente */
-        flex-direction: column; /* Empilha os links verticalmente */
+        display: flex; 
+        flex-direction: column; 
     }
 
     .menu-toggle {
-        display: flex; /* Mostra o ícone de hambúrguer em telas menores */
+        display: flex; 
     }
 
     .navbar {
-        flex-direction: row; /* Mantém os elementos da navbar na horizontal */
-        height: 80px; /* Mantém a navbar fina mesmo em telas menores */
+        flex-direction: row; 
+        height: 80px; 
     }
     
     .container, .container2 {
-        flex-direction: column; /* Organiza as colunas em coluna */
-        padding: 10px; /* Ajusta o padding */
+        flex-direction: column; 
+        padding: 10px; 
     }
     .coluna {
         flex: 1; 
@@ -272,18 +271,18 @@ telas menores */
     }
 /* Estilo dos links de navegação */
 .nav-links a {
-    padding: 15px 20px; /* Ajusta o padding dos links */
+    padding: 15px 20px; 
     text-decoration: none;
     color: #333;
     text-align: center;
-    display: block; /* Faz com que os links ocupem toda a largura */
+    display: block; 
 }
 
 .rastro {
     border-bottom: 5px solid #F6C43E;
     border-radius: 10px;
-    width: 30%; /* Ajuste conforme necessário */
-    margin-left: 38%; /* Centraliza o elemento */
+    width: 30%; 
+    margin-left: 38%; 
     display: block;
 }
 
@@ -295,17 +294,17 @@ telas menores */
 }
 @media (max-width: 768px) {
     .btn {
-        font-size: 20px; /* Diminui o tamanho do botão */
-        padding: 8px 12px; /* Ajusta o padding do botão */
+        font-size: 20px; 
+        padding: 8px 12px; 
     }
 
     .footer {
-        flex-direction: column; /* Empilha as colunas do rodapé */
-        align-items: center; /* Centraliza o conteúdo do rodapé */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .coluna {
-        margin: 10px 0; /* Ajusta a margem das colunas do rodapé */
+        margin: 10px 0; 
     }
     .img-hist{
         height: 270px;
