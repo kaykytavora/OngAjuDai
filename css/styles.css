@@ -236,17 +236,18 @@ body {
 telas menores */
 @media (max-width: 1040px) {
     .nav-links {
-        display: none;
-        flex-direction: column; 
-        width: 100%; 
-        background-color: #ffffff; 
-        top: 83px; 
+        position: absolute; /* Para que ele se posicione em relação à navbar */
+        top: 83px; /* Ajuste conforme necessário */
         left: 0;
+        width: 100%;
+        background-color: #ffffff; /* Fundo para visibilidade */
+        display: none; /* Escondido por padrão */
+        z-index: 10; /* Para aparecer acima de outros elementos */
     }
     
     .nav-links.active {
-        display: flex; 
-        flex-direction: column; 
+        display: flex; /* Torna visível */
+        flex-direction: column; /* Exibe os links em coluna */
     }
 
     .menu-toggle {
